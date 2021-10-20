@@ -1,0 +1,24 @@
+
+@for $i from 1 through 8 {
+    .album__article-#{$i}{
+        width: 100%;
+        margin: 4px 0px;
+        color: beige;
+        
+    }
+    
+}
+@each $album in 1, 2, 3, 4, 5, 6, 7, 8 {
+    .album-#{$album}{
+        background-image: url(./imagen/#{$album}.jpg);
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+    }
+    
+}

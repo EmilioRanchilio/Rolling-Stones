@@ -1,0 +1,216 @@
+@import "./Parciales/album";
+body{
+    background: rgb(157,7,7);
+    background: linear-gradient(0deg, rgba(157,7,7,1) 0%, rgba(130,7,7,1) 10%, rgba(110,6,6,1) 19%, rgba(56,2,2,1) 31%, rgba(54,2,2,1) 49%, rgba(37,1,1,1) 64%, rgba(103,8,8,1) 85%, rgba(126,124,124,1) 92%, rgba(110,109,109,1) 100%);
+}
+.div__logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    &--img{
+        height: 100px;
+    }
+}
+.info{ 
+    background-color: black;
+    height: 150px;
+    .height{
+        height: 100%;
+    
+    }
+    &__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__nav--btn{
+        font-family: 'Rock Salt', cursive;
+        margin: 0px 2rem;
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 20px;
+        transition: all 0.3s;
+    }
+    &__nav--btn:hover{
+        color: brown;
+        font-size: 35px;
+        font-stretch: condensed black;
+    }
+    &__nav--dropdown{
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: blanchedalmond;
+        border: 10px solid beige!important;
+        border-radius: 5px;
+        font-family: 'Rock Salt', cursive;
+        margin: 5px!important;
+    }
+    &__nav--background{
+        background-image: url(./imagen/Guitarra.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.titulo{
+    background-image: url(./imagen/rolling.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    &__texto{
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 90vh;
+        color: black;
+        text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+        font-family: 'Rock Salt', cursive;
+        font-size: 4.5rem;
+    }
+}
+.imagen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./imagen/Rolling-PhotoRoom.png);
+    background-position: center center;
+    .h2{
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px;
+        color: blanchedalmond;
+        text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+
+    }
+    &__cuadro{
+        border: solid 5px blanchedalmond;
+        margin: 10px 0px;
+        border-radius: 6px;
+        background-color: blanchedalmond;
+        box-shadow: 0px 5px 5px 5px brown;
+    }
+    &__cuadro--fcap{
+        color: black;
+        height: 30px;
+        text-align: center;
+        font-family: 'Rock Salt', cursive;;
+        margin-top: 10px;
+        letter-spacing: 3px;
+        transition: all 0.3s;
+    }
+    &__ancor{
+        text-decoration: none;
+    }
+    &__cuadro--fcap:hover{
+        color: blanchedalmond;
+        font-size: 15px;
+        background-color: brown;
+        border-radius: 10px;
+    }
+}
+.main__desc{
+    background-image:url(./imagen/Se-Pico.jpg);
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px black, 20px 0px 20px 20px blanchedalmond;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    &--p{
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: blanchedalmond;
+        font-family: 'rock salt', cursive;
+        text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+    &--contimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 55%;
+    }
+    &--img{
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+    }
+}
+.footer{
+    margin-top: 30px;
+
+    &__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__nav--anc{
+        color: blanchedalmond;
+        margin: 0px 10px;
+        font-size: 30px;
+    }
+    &__nav--anc:hover{
+        color: black;
+        font-size: 35px;
+    }
+    .footer__span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: blanchedalmond;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and(max-width: 1180px) {
+     .main__desc--p{
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;;
+        letter-spacing: 0px;
+    }
+}
+@media screen and(max-width: 768px) {
+    .main__desc--p{
+        color:white;
+        font-size: 16px;
+        letter-spacing: 0px;
+        height: 35%;
+    }
+    .info__nav--btn{
+        font-size: 17px;
+        color: brown;
+    }
+    .main__desc--contimg{
+        width: 100%;
+
+    }
+    .titulo__texto{
+        font-size: 30px;
+    }
+}
+@media screen and(max-width: 375px){
+    .main__desc--p{
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    .titulo__texto{
+        font-size: 30px;
+    }
+}

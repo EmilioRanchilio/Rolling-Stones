@@ -1,9 +1,11 @@
 
-@for $i from 1 through 8 {
-    .album__article-#{$i}{
+@for $album from 1 through 8 {
+    .album__article-#{$album}{
         width: 100%;
         margin: 4px 0px;
         color: beige;
+        display: flex;
+        
         
     }
     
@@ -17,6 +19,7 @@
         font-size: 15px;
         display: flex;
         align-items: center;
+        justify-content: center;
         color: whitesmoke;
         text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
     }

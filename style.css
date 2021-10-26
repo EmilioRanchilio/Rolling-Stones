@@ -2,48 +2,72 @@
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-2 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-3 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-4 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-5 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-6 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-7 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album__article-8 {
   width: 100%;
   margin: 4px 0px;
   color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .album-1 {
@@ -58,6 +82,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -74,6 +101,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -90,6 +120,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -106,6 +139,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -122,6 +158,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -138,6 +177,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -154,6 +196,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
@@ -170,14 +215,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
 
 body {
-  background: #9d0707;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9d0707), color-stop(10%, #820707), color-stop(19%, #6e0606), color-stop(31%, #380202), color-stop(49%, #360202), color-stop(64%, #250101), color-stop(85%, #670808), color-stop(92%, #7e7c7c), to(#6e6d6d));
-  background: linear-gradient(0deg, #9d0707 0%, #820707 10%, #6e0606 19%, #380202 31%, #360202 49%, #250101 64%, #670808 85%, #7e7c7c 92%, #6e6d6d 100%);
+  background: #131111;
 }
 
 .div__logo {
@@ -197,12 +243,7 @@ body {
 }
 
 .info {
-  background-color: black;
-  height: 150px;
-}
-
-.info .height {
-  height: 100%;
+  height: 250px;
 }
 
 .info__nav {
@@ -218,29 +259,31 @@ body {
 }
 
 .info__nav--btn {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   margin: 0px 2rem;
   text-decoration: none;
   color: blanchedalmond;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 15px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .info__nav--btn:hover {
   color: brown;
-  font-size: 35px;
+  font-size: 22px;
   font-stretch: condensed black;
 }
 
 .info__nav--dropdown {
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 10px;
+  letter-spacing: 2px;
   color: blanchedalmond;
-  border: 10px solid beige !important;
+  border: 5px solid beige !important;
   border-radius: 5px;
   font-family: 'Rock Salt', cursive;
   margin: 5px !important;
+  font-weight: bold;
 }
 
 .info__nav--background {
@@ -249,34 +292,39 @@ body {
   background-size: cover;
 }
 
-.titulo {
-  background-image: url(./imagen/rolling.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 90vh;
-  width: 100%;
-}
-
 .titulo__texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
-  height: 90vh;
-  color: black;
+  width: 100%;
+  color: whitesmoke;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
   font-family: 'Rock Salt', cursive;
-  font-size: 4.5rem;
+  font-size: 40px;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
 }
 
-.imagen {
+.titulo video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center !important;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 65vh;
+  -webkit-box-shadow: 0px 0px 10px 0px black, 20px 0px 20px 20px blanchedalmond;
+          box-shadow: 0px 0px 10px 0px black, 20px 0px 20px 20px blanchedalmond;
+}
+
+.imagen__cuadro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,19 +340,20 @@ body {
   background-position: center center;
 }
 
-.imagen .h2 {
+.imagen__cuadro .h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5px 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: blanchedalmond;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
 }
 
-.imagen__cuadro {
+.imagen__cuadro--div {
   border: solid 5px blanchedalmond;
   margin: 10px 0px;
   border-radius: 6px;
@@ -324,7 +373,7 @@ body {
   transition: all 0.3s;
 }
 
-.imagen__ancor {
+.imagen__cuadro .imagen__ancor {
   text-decoration: none;
 }
 
@@ -357,10 +406,10 @@ body {
           justify-content: center;
   text-align: center;
   color: blanchedalmond;
-  font-family: 'rock salt', cursive;
+  font-family: 'Open Sans', sans-serif;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
   letter-spacing: 5px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .main__desc--contimg {
@@ -381,6 +430,14 @@ body {
   width: 100%;
   height: 100%;
   margin: 10px;
+}
+
+.titulo__bandas {
+  text-align: center;
+  margin-top: 4cm;
+  color: black;
+  text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
+  font-family: 'Rock Salt', cursive;
 }
 
 .footer {
@@ -425,6 +482,44 @@ body {
   padding: 10px;
 }
 
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: brown;
+  font-size: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.scroll:hover {
+  color: burlywood;
+  font-size: 25px;
+}
+
+hr {
+  color: burlywood;
+}
+
+.album__article {
+  width: 100%;
+}
+
+.album__article .album__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  color: #ce2828;
+}
+
 @media screen and (max-width: 1180px) {
   .main__desc--p {
     font-size: 25px;
@@ -442,7 +537,6 @@ body {
   }
   .info__nav--btn {
     font-size: 17px;
-    color: brown;
   }
   .main__desc--contimg {
     width: 100%;

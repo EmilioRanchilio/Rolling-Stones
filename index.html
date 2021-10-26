@@ -17,19 +17,26 @@
     <title>The Rolling Stones </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    
 </head>
 <body>
-    <!encabezado de la pagina>
+
+    <!--ENCABEZADO DE LA PAGINA-->
+
         <header>
             <div class="container-fluid info">
-                <div class="row height">
+                <div class="row" id="inicio">
                     <div class="col-lg-3 p-0 col-sm-12 div__logo">
                         <img src="./imagen/pixlr-bg-result (1).png" alt="Logo" class="div__logo--img">
                     </div>
                     <div class="col-lg-9 p-0 col-sm-12 info__nav">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="container-fluid">
-                              <a class="info__nav--btn" href="./index.html">Home</a>
+                              <a class="info__nav--btn" href="./index.html">Inicio</a>
                               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon bg-danger"></span>
                               </button>
@@ -43,10 +50,10 @@
                                       Artistas
                                     </a>
                                     <ul class="dropdown-menu bg-dark p-3 mt-4 info__nav--background" aria-labelledby="navbarDropdown">
-                                      <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Mick-Jagger.html">Mick Jagger</a></li>
-                                      <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Keith-Richard.html">Keith Richard</a></li>
-                                      <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Charlie-Watts.html">Charlie Watts</a></li>
-                                      <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Ronnie-Wood.html">Ronnie Wood</a></li>
+                                      <li><a class="dropdown-item border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Mick-Jagger.html">Mick Jagger</a></li>
+                                      <li><a class="dropdown-item border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Keith-Richard.html">Keith Richard</a></li>
+                                      <li><a class="dropdown-item border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Charlie-Watts.html">Charlie Watts</a></li>
+                                      <li><a class="dropdown-item border border-2 border-secondary m-1 info__nav--dropdown" href="./Artistas-index/Ronnie-Wood.html">Ronnie Wood</a></li>
                                     </ul>
                                   </li>
                                 </ul>
@@ -58,30 +65,35 @@
             </div>
         </header>
         <div class="titulo">
-            <h1 class="titulo__texto" data-aos="zoom-in-right">The Rolling Stones</h1>  
+            <h1 class="titulo__texto" data-aos="zoom-in-right">The Rolling Stones</h1>
+            <br> <br>
+            <video src="./Videos/Rolling Stones - Paint it Black 2006 Live Video HD_Trim.mp4" autoplay muted></video>
         </div>
-    <!Parte principal de la pagina>
+
+    <!--SECCION PRINCIPAL DE LA PAGINA-->
+
     <br> <br> <br> <br>
-    <section class="imagen">
-        <div class="col-md-12"><h2 class="h2">Integrantes de la Banda</h2></div>
-        <div class="imagen__cuadro" data-aos="fade-up-left">
+    <section class="imagen__cuadro">
+        <div class="col-md-12"><h2 class="h2" data-aos="fade-up">INTEGRANTES DE LA BANDA</h2></div>
+        
+        <div class="imagen__cuadro--div" data-aos="fade-up-left">
             <figure>
-                <a href="./Artistas-index/Mick-Jagger.html" class="imagen__ancor" ><img src="./imagen/MickJagger.jpg" alt="Mick Jagger" ><figcaption class="imagen__cuadro--fcap">Mick Jagger</figcaption></a>
+                <a href="./Artistas-index/Mick-Jagger.html" class="imagen__ancor" ><img src="./imagen/MickJagger.jpg" alt="Mick Jagger" class="imagen__cuadro--img" ><figcaption class="imagen__cuadro--fcap">Mick Jagger</figcaption></a>
             </figure>
         </div>
-        <div class="imagen__cuadro" data-aos="flip-left">
+        <div class="imagen__cuadro--div" data-aos="flip-left">
             <figure>
-                <a href="./Artistas-index/Keith-Richard.html" class="imagen__ancor"><img src="./imagen/keith richard.jpg" alt="Keith Richard" ><figcaption class="imagen__cuadro--fcap">Keith Richard</figcaption></a>
+                <a href="./Artistas-index/Keith-Richard.html" class="imagen__ancor"><img src="./imagen/keith richard.jpg" alt="Keith Richard" class="imagen__cuadro--img" ><figcaption class="imagen__cuadro--fcap">Keith Richard</figcaption></a>
             </figure>
         </div>
-        <div class="imagen__cuadro qepd" data-aos="flip-right">
+        <div class="imagen__cuadro--div qepd" data-aos="flip-right">
             <figure>
-                <a href="./Artistas-index/Keith-Richard.html" class="imagen__ancor"><img src="./imagen/Charlie Watts (1) (1).jpeg" alt="Charlie Watts" ><figcaption class="imagen__cuadro--fcap">Charlie Watts</figcaption></a>
+                <a href="./Artistas-index/Keith-Richard.html" class="imagen__ancor"><img src="./imagen/Charlie Watts (1) (1).jpeg" alt="Charlie Watts" class="imagen__cuadro--img" ><figcaption class="imagen__cuadro--fcap">Charlie Watts</figcaption></a>
             </figure>
         </div>
-        <div class="imagen__cuadro" data-aos="fade-up-left" >
+        <div class="imagen__cuadro--div" data-aos="fade-up-left" >
             <figure>
-                <a href="./Artistas-index/Ronnie-Wood.html" class="imagen__ancor"><img src="./imagen/Ronnie-Wood.jpg" alt="Ronnie-Wood" class="estilo"><figcaption class="imagen__cuadro--fcap">Ronnie Wood <i></i></figcaption></a>
+                <a href="./Artistas-index/Ronnie-Wood.html" class="imagen__ancor"><img src="./imagen/Ronnie-Wood.jpg" alt="Ronnie-Wood" class="estilo imagen__cuadro--img"><figcaption class="imagen__cuadro--fcap">Ronnie Wood <i></i></figcaption></a>
             </figure>
         </div>
     </section>
@@ -89,68 +101,74 @@
         <div class="container">
             <div class="row p-5">
                 <div class="col-lg-12 main__desc">
-                    <p class="main__desc--p" data-aos="zoom-in-down"> Rolling Stones es una banda británica de rock originaria de Londres .  La banda se formó en abril de 19622​ por Brian Jones,  Mick Jagger,  Keith Richards ,  Bill Wyman ,  Charlie Watts e Ian Stewart .  Brian Jones fue despedido en junio de 1969 ,  falleciendo tres semanas después ,  siendo reemplazado por el guitarrista Mick Taylor ,  que dejaría el grupo en 1975 y sería a su vez reemplazado por Ronnie Wood .</p>
+                    <p class="main__desc--p" data-aos="zoom-in-down"> Rolling Stones es una banda británica de rock originaria de Londres .  La banda se formó en abril de 1962​ por Brian Jones,  Mick Jagger,  Keith Richards ,  Bill Wyman ,  Charlie Watts e Ian Stewart .  Brian Jones fue despedido en junio de 1969 ,  falleciendo tres semanas después ,  siendo reemplazado por el guitarrista Mick Taylor ,  que dejaría el grupo en 1975 y sería a su vez reemplazado por Ronnie Wood .</p>
                     <span class="main__desc--contimg" ><img src="./imagen/Banda-album.png" alt="banda" class="main__desc--img" data-aos="zoom-in-up"></span>
                 </div>
             </div>
         </div>
     </main>
-    <div><h2>Lo mejor de lo mejor </h2></div>
-    <div class="album container-fluid">
-        <div class="row">
-            <article class="album__article-1 album__article--top col-md-3">
-                <h3 class="album-1">"EXILE ON MAIN ST."</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, delectus?</p>
 
-            </article>
-            <hr>
-            <article class="album__article-2 album__article--top2 col-md-3">
-                <h3 class="album-2"> "OUT OF OUR HEADS"</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nobis!</p>
+    <!--SECCION DE LOS ALBUMES-->
 
-            </article>
-            <hr>
-            <article class="album__article-3 album__article--top col-md-3">
-                <h3 class="album-3">"AFTERMATH"</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto?</p>
-
-            </article>
-            <hr>
-            <article class="album__article-4 album__article--top2 col-md-3">
-                <h3 class="album-4">"BEGGARS BANQUET" </h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, accusantium.</p>
-
-            </article>
-            <hr>
-            <article class="album__article-5 album__article--top col-md-3">
-                
-                <h3 class="album-5">"LET IT BLEED"</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quaerat.</p>
-
-            </article>
-            <hr>
-            <article class="album__article-6 album__article--top2 col-md-3">
-                
-                <h3 class="album-6">"STICKY FINGERS"</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, accusamus?</p>
-
-            </article>
-            <hr>
-            <article class="album__article-7 album__article--top col-md-3">
-                
-                <h3 class="album-7">"TATTOO YOU"</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, non?</p>
-
-            </article>
-            <hr>
-            <article class="album__article-8 album__article--top2 col-md-3">
-                <h3 class="album-8">"BLUE & LONESOME"</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, officiis.</p>
-
-            </article>
-            <hr>
+    <div><h2 class="titulo__bandas">LOS MEJORES ALBUMES DE LA BANDA </h2></div>
+    <br><br><br>
+                    <article class="album__article-1 album__article col-md-3">
+                        <h3 class="album-6">"EXILE ON MAIN ST."</h3>
+                        <p class="album__p">Con el grupo viviendo en Francia por cuestiones fiscales y con Richards metido en la droga, los Stones gravaron este doble álbum en su mítico estudio móvil, desplegando su amalgama de influencias con unas letras más perfiladas y menos explícitas que evidenciaban la llegada de su madurez.</p>
+                    </article>
+                    <hr>
+                    <article class="album__article-2 album__article col-md-3">
+                        <h3 class="album-2"> "OUT OF OUR HEADS"</h3>
+                        <p class="album__p">Con el tiempo los Stones comenzaron a alternar las versiones con los temas propios. Este es el caso de este álbum repartido a la par con covers de Bo Diddley, Marvin Gaye o Sam Cooke con composiciones propias con las que comenzaron a cosechar fama mundial</p>
+        
+                    </article>
+                    <hr>
+                    <article class="album__article-3 album__article col-md-3">
+                        <h3 class="album-3">"AFTERMATH"</h3>
+                        <p class="album__p">Con una versión europea que difiere de la americana, "Aftermath" es la primera obra maestra de la banda integrada sólo por creaciones propias. Así la dupla Jagger-Richards se revelaron más que nunca como enormes hacedores de canciones.</p>
+        
+                    </article>
+                    <hr>
+                    <article class="album__article-4 album__article col-md-3">
+                        <h3 class="album-4">"BEGGARS BANQUET" </h3>
+                        <p class="album__p">El primer disco con la que comenzó la que para muchos es su época dorada, tiene como portada la foto de un lavabo con unas polémicas pintadas que retrasaron su publicación. En el interior, la base r 'n' b pero con elementos country y de psicodelia y unas guitarras de Richards que suenan como nunca.</p>
+        
+                    </article>
+                    <hr>
+                    <article class="album__article-5 album__article col-md-3">
+                        
+                        <h3 class="album-5">"LET IT BLEED"</h3>
+                        <p class="album__p">Con la entrada de Mick Taylor a la guitarra rítmica y la guerra del Vietnam de fondo como influencia, el disco tiene elementos del blues tan propios de la banda junto con las nuevas texturas country que ya habían metido en su anterior entrega.Durante su grabación llegó la trágica noticia de la extraña muerte de Brian Jones, y al final de la gira de presentación tuvo lugar en el festival de Altamont con sus fatídicos sucesos.</p>
+        
+                    </article>
+                    <hr>
+                    <article class="album__article-6 album__article col-md-3">
+                        <h3 class="album-6">"STICKY FINGERS"</h3>
+                        <p class="album__p">El cambio de década trajo a los mejores Stones con esta obra magna de portada de Andy Warhol censurada en España (como el tema "Sister Morphine") y con una crudeza en las letras y muy influenciado por el country de Gram Parsons, por entonces íntimo amigo de Richards.</p>
+                    </article>
+                    <hr>
+                    <article class="album__article-7 album__article col-md-3">
+                        <h3 class="album-7">"TATTOO YOU"</h3>
+                        <p class="album__p">La letal "Start Me Up" estrena el que es para muchos el último trabajo clásico de los Rolling Stones antes de meterse en una década en la que no tuvieron demasiados aciertos.</p>
+        
+                    </article>
+                    <hr>
+                    <article class="album__article-8 album__article col-md-3">
+                        <h3 class="album-8">"BLUE & LONESOME"</h3>
+                        <p class="album__p">Más de diez años después de publicar un trabajo de estudio ("A Bigger Band" de 2005) los Stones volvieron con un elepé en el que recuperaban sus raíces musicales, el Blues con doce reinterpretaciones de piezas clásicas.</p>
+        
+                    </article>
+                </div>
+            </div> 
+            <div>
+                <a data-scroll href="#inicio" class="scroll">Volver al inicio</a>
+            </div>
         </div>
     </div>
+
+
+<!--PIE DE PAGINA-->
+
     <footer class="footer">
         <nav class="footer__nav">
             <a href="https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe?si=4sxCGVhLQDubfG6A6f3gSA&dl_branch=1"><i class="fab fa-spotify footer__nav--anc"></i></a>
@@ -160,10 +178,9 @@
         </nav>
         <span class="footer__span">© Rolling Stones 2021. All rights reserved.</span> 
     </footer>
-
-    
-
     <!--AOS-->
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();

@@ -1,7 +1,9 @@
 @import "./Parciales/album";
+$text-rock:'Rock Salt', cursive;
+$text-form:'Open Sans', sans-serif ;
+
 body{
-    background: rgb(157,7,7);
-    background: linear-gradient(0deg, rgba(157,7,7,1) 0%, rgba(130,7,7,1) 10%, rgba(110,6,6,1) 19%, rgba(56,2,2,1) 31%, rgba(54,2,2,1) 49%, rgba(37,1,1,1) 64%, rgba(103,8,8,1) 85%, rgba(126,124,124,1) 92%, rgba(110,109,109,1) 100%);
+    background: rgb(19, 17, 17);
 }
 .div__logo{
     display: flex;
@@ -11,39 +13,39 @@ body{
         height: 100px;
     }
 }
+
+
 .info{ 
-    background-color: black;
-    height: 150px;
-    .height{
-        height: 100%;
+    height: 250px;
     
-    }
     &__nav{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     &__nav--btn{
-        font-family: 'Rock Salt', cursive;
+        font-family: $text-rock;
         margin: 0px 2rem;
         text-decoration: none;
         color: blanchedalmond;
-        font-size: 20px;
+        font-weight: bold;
+        font-size: 15px;
         transition: all 0.3s;
     }
     &__nav--btn:hover{
         color: brown;
-        font-size: 35px;
+        font-size: 22px;
         font-stretch: condensed black;
     }
     &__nav--dropdown{
-        font-size: 20px;
-        letter-spacing: 3px;
+        font-size: 10px;
+        letter-spacing: 2px;
         color: blanchedalmond;
-        border: 10px solid beige!important;
+        border: 5px solid beige!important;
         border-radius: 5px;
         font-family: 'Rock Salt', cursive;
         margin: 5px!important;
+        font-weight: bold;
     }
     &__nav--background{
         background-image: url(./imagen/Guitarra.jpg);
@@ -53,25 +55,27 @@ body{
 }
 
 .titulo{
-    background-image: url(./imagen/rolling.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 90vh;
-    width: 100%;
     &__texto{
         display: flex;
-        margin-left: 30px;
         align-items: center;
         justify-content: center;
-        width: 50%;
-        height: 90vh;
-        color: black;
+        width: 100%;
+        color: whitesmoke;
         text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
         font-family: 'Rock Salt', cursive;
-        font-size: 4.5rem;
+        font-size: 40px;
+        transition-delay: 3s;
     }
+    video{
+        display: flex;
+        justify-items: center !important;
+        align-content: center;
+        width: 100%;
+        height: 65vh;
+        box-shadow: 0px 0px 10px 0px black, 20px 0px 20px 20px blanchedalmond;
+        }
 }
-.imagen{
+.imagen__cuadro{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -81,31 +85,32 @@ body{
     .h2{
         display: flex;
         justify-content: center;
-        margin: 5px 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         color: blanchedalmond;
         text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
 
     }
-    &__cuadro{
+    &--div{
         border: solid 5px blanchedalmond;
         margin: 10px 0px;
         border-radius: 6px;
         background-color: blanchedalmond;
         box-shadow: 0px 5px 5px 5px brown;
     }
-    &__cuadro--fcap{
+    &--fcap{
         color: black;
         height: 30px;
         text-align: center;
-        font-family: 'Rock Salt', cursive;;
+        font-family: 'Rock Salt', cursive;
         margin-top: 10px;
         letter-spacing: 3px;
         transition: all 0.3s;
     }
-    &__ancor{
+    .imagen__ancor{
         text-decoration: none;
     }
-    &__cuadro--fcap:hover{
+    &--fcap:hover{
         color: blanchedalmond;
         font-size: 15px;
         background-color: brown;
@@ -127,10 +132,10 @@ body{
         justify-content: center;
         text-align: center;
         color: blanchedalmond;
-        font-family: 'rock salt', cursive;
+        font-family: 'Open Sans', sans-serif ;
         text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
         letter-spacing: 5px;
-        font-size: 25px;
+        font-size: 30px;
     }
     &--contimg{
         display: flex;
@@ -144,6 +149,14 @@ body{
         height: 100%;
         margin: 10px;
     }
+}
+.titulo__bandas{
+    text-align: center;
+    margin-top: 4cm;
+    color: black;
+    text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+    font-family: 'Rock Salt', cursive;  
+
 }
 .footer{
     margin-top: 30px;
@@ -171,6 +184,36 @@ body{
         padding: 10px;
     }
 }
+.scroll{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: brown;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.scroll:hover{
+    color: burlywood;
+    font-size: 25px;
+
+}
+hr{
+    color: burlywood;
+
+}
+.album__article{
+    width: 100%;
+    .album__p{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        width: 100%;
+        color: rgb(206, 40, 40);
+    }
+}
+
+
 
 
 
@@ -182,7 +225,7 @@ body{
 @media screen and(max-width: 1180px) {
      .main__desc--p{
         font-size: 25px;
-        font-family: 'Open Sans', sans-serif;;
+        font-family: 'Open Sans', sans-serif;
         letter-spacing: 0px;
     }
 }
@@ -195,7 +238,6 @@ body{
     }
     .info__nav--btn{
         font-size: 17px;
-        color: brown;
     }
     .main__desc--contimg{
         width: 100%;

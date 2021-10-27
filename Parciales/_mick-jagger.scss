@@ -1,0 +1,111 @@
+@import "../Parciales/responsive";
+body{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(42,39,39,1) 26%, rgba(101,86,83,1) 49%, rgba(162,126,122,1) 72%, rgb(139, 32, 32) 100%);  
+}
+/*ESTILO DEL ENCABEZADO*/
+
+h1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 50px;
+    text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70)
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__info{
+        color: wheat;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+        letter-spacing: 5px;
+        align-items: center;
+    }
+    &__info--background{
+        background-image: url(../imagen/Guitarra.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    &__info--dropdown{
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: blanchedalmond;
+        border: 3px solid blanchedalmond;
+        border-radius: 2px;
+        font-family: 'Rock Salt', cursive;
+        margin: 2px!important;
+    }
+    &__info:hover{
+        color: black;
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*ESTILOS DEL MAIN*/
+
+
+.mick{
+    width: 80%;
+    height: 70vh;
+    border-radius: 20px;
+    border: solid black 5px;
+}
+h2{
+    color: blanchedalmond;
+    padding-left: 20px;
+    font-size: 50px;
+    text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+}
+p{
+    padding: 0px 20px;
+    font-size: 40px;
+    text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
+    font-weight: bold;
+}
+
+
+
+
+/*ESTILOS DEL FOOTER*/
+
+
+.footer{
+    margin-top: 30px;
+
+    &__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__nav--anc{
+        color: blanchedalmond;
+        margin: 0px 10px;
+        font-size: 30px;
+    }
+    &__nav--anc:hover{
+        color: black;
+        font-size: 35px;
+    }
+    .footer__span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: blanchedalmond;
+        padding: 10px;
+    }
+}

@@ -1,7 +1,6 @@
 @import url(../Parciales/_media-queries.scss);
 
 body{
-    font-family: 'Rock Salt', cursive;
     max-width: 1920px;
     background-image: url(../imagen/fondo-pared.jpg);
     background-position: center;
@@ -20,6 +19,7 @@ body{
         height: 100%;
         text-align: center;
         letter-spacing: 10px;
+        font-size: 40px;
         text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70)
     }
     .header__logo{
@@ -34,7 +34,8 @@ body{
         align-items: center;
     }
     .header__nav--info{
-        color: black;
+        color: blanchedalmond;
+        font-weight: bold;
         border-radius: 10px;
         padding: 0px 10px;
         margin: 10px 40px;
@@ -53,6 +54,11 @@ body{
 
 
 
+}
+h2{
+    font-family: 'Open Sans', sans-serif ;
+    color: black;
+    text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px rgb(167, 70, 70);
 }
 form{
     color: wheat;

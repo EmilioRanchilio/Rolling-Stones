@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+<!--HEADER-->
+
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -27,45 +31,56 @@
                 </div>
                 <div class="col-lg-4">
                     <nav class="nav">
-                        <a href="../index.html" class="info">inicio</a>
-                        <a href="../Directorios/Contacto.html" class="info">Contacto</a>
-                        <a class="dropdown-toggle info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="../index.html" class="nav__info">inicio</a>
+                        <a href="../Directorios/Contacto.html" class="nav__info">Contacto</a>
+                        <a class="dropdown-toggle nav__info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Artistas
                           </a>
-                          <ul class="dropdown-menu bg-dark p-3 mt-4 info__nav--background" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Mick-Jagger.html">Mick Jagger</a></li>
-                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Keith-Richard.html">Keith Richard</a></li>
-                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Charlie-Watts.html">Charlie Watts</a></li>
-                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 info__nav--dropdown" href="./Ronnie-Wood.html">Ronnie Wood</a></li>
+                          <ul class="dropdown-menu bg-dark p-3 mt-4 nav__info--background" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 nav__info--dropdown" href="./Mick-Jagger.html">Mick Jagger</a></li>
+                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 nav__info--dropdown" href="./Keith-Richard.html">Keith Richard</a></li>
+                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 nav__info--dropdown" href="./Charlie-Watts.html">Charlie Watts</a></li>
+                            <li><a class="dropdown-item bg-danger border border-2 border-secondary m-1 nav__info--dropdown" href="./Ronnie-Wood.html">Ronnie Wood</a></li>
                           </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+
+
+<!--SECTION PRINCIPAL-->
+
     <section data-aos="flip-left">
-        <div class="container-fluid p-5">
+        <div class="container-fluid p-3">
             <div class="row">
-                <div class="col-lg-6">
-                    <img class="mick" src="../imagen/Directorio-charlie.jpg" alt="Charlie-Watts">
+                <div class="col-lg-6 col-xl-6 col-sm-12">
+                    <img class="imagen" src="../imagen/Directorio-charlie.jpg" alt="Charlie Watts">
                 </div>
-                <div class="col-lg-6" >
+                <div class="col-lg-6 col-md-12 col-sm-12" >
                     <h2>CHARLIE WATTS</h2>
                     <hr>
-                    <p class="divFondo">Charles Robert Watts (Londres ,  2 de junio de 1941-Ib ,  24 de agosto de 2021)​ fue un músico y baterista británico reconocido por ser miembro de la banda de rock The Rolling Stones .  Desde su ingreso en 1963 hasta su fallecimiento permaneció en el grupo ,  formando con el cantante Mick Jagger y el guitarrista Keith Richards la asociación más duradera en la historia del rock.</p>
+                    <p>Charles Robert Watts (Londres ,  2 de junio de 1941-Ib ,  24 de agosto de 2021)​ fue un músico y baterista británico reconocido por ser miembro de la banda de rock The Rolling Stones .  Desde su ingreso en 1963 hasta su fallecimiento permaneció en el grupo ,  formando con el cantante Mick Jagger y el guitarrista Keith Richards la asociación más duradera en la historia del rock.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <nav>
-            <a href="https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe?si=4sxCGVhLQDubfG6A6f3gSA&dl_branch=1"><i class="fab fa-spotify"></i></a>
-            <a href="https://www.youtube.com/RollingStones/featured"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/therollingstones/"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/RollingStones"><i class="fab fa-twitter-square"></i></a> 
+
+<!--FOOTER-->
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <a href="https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe?si=4sxCGVhLQDubfG6A6f3gSA&dl_branch=1"><i class="fab fa-spotify footer__nav--anc"></i></a>
+            <a href="https://www.youtube.com/RollingStones/featured"><i class="fab fa-youtube footer__nav--anc"></i></a>
+            <a href="https://www.instagram.com/therollingstones/"><i class="fab fa-instagram footer__nav--anc"></i></a>
+            <a href="https://twitter.com/RollingStones"><i class="fab fa-twitter-square footer__nav--anc"></i></a> 
         </nav>
-        <span class="spanFooter">© Rolling Stones 2021. All rights reserved.</span> 
+        <span class="footer__span">© Rolling Stones 2021. All rights reserved.</span> 
     </footer>
+
+
+    <!--script-->
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
      AOS.init();

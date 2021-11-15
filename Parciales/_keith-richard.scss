@@ -1,4 +1,4 @@
-@import "../Parciales/responsive"
+@import "../Parciales/responsive";
 body{
     background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(42,39,39,1) 26%, rgba(101,86,83,1) 49%, rgba(162,126,122,1) 72%, rgb(139, 32, 32) 100%);  
 }
@@ -59,7 +59,7 @@ h1{
 
 
 .keith{
-    width: 80%;
+    width: 100%;
     height: 70vh;
     border-radius: 20px;
     border: solid black 5px;

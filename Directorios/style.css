@@ -1,9 +1,8 @@
 @import url(../Parciales/_media-queries.scss);
 body {
-  max-width: 1920px;
-  background-image: url(../imagen/fondo-pared.jpg);
+  background-image: url(../imagen/fondo.rolling.png);
   background-position: center;
-  background-size: cover;
+  background-size: cover cover;
   height: 100%;
   width: 100%;
 }
@@ -41,31 +40,32 @@ body {
 }
 
 .header__cont .header__nav {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .header__cont .header__nav--info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: blanchedalmond;
   font-weight: bold;
   border-radius: 10px;
-  padding: 0px 10px;
+  padding: 10px;
   margin: 10px 40px;
-  font-size: 15px;
+  font-size: 20px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   letter-spacing: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__cont .header__nav--info:hover {
@@ -74,10 +74,25 @@ body {
   font-stretch: condensed black;
 }
 
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
+.header__cont .header__nav--dropdown {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: blanchedalmond;
+  border: 5px solid beige !important;
+  border-radius: 5px;
+  font-family: 'Rock Salt', cursive;
+  margin: 5px !important;
+  font-weight: bold;
+}
+
+.header__cont .header__nav--dropdown:hover {
+  background-color: red;
+}
+
+.header__cont .header__nav--background {
+  background-image: url(../imagen/Guitarra.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 form {
@@ -99,13 +114,15 @@ textarea {
   border: groove 5px #6d5656;
   width: 90%;
   height: 100%;
+  background-color: blanchedalmond;
 }
 
 p {
   color: blanchedalmond;
-  font-size: 20px;
+  font-size: 40px;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
   letter-spacing: 5px;
+  font-weight: bold;
 }
 
 .footer {
@@ -167,7 +184,7 @@ p {
     width: 100%;
   }
   .header__nav--info {
-    font-size: 5px;
+    font-size: 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */

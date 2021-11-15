@@ -224,6 +224,7 @@
 
 body {
   background: #131111;
+  margin: 5px;
 }
 
 .div__logo {
@@ -239,24 +240,31 @@ body {
 }
 
 .div__logo--img {
-  height: 50px;
+  height: 80px;
+}
+
+.ul__pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+}
+
+.header {
+  height: 100px;
 }
 
 .info {
   height: 100px;
   margin-top: 10px;
-}
-
-.info__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .info__nav--btn {
@@ -313,6 +321,7 @@ body {
 }
 
 .titulo video {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,12 +353,7 @@ body {
 
 .imagen__cuadro .h2 {
   font-family: "Rock Salt", cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   color: blanchedalmond;
@@ -390,8 +394,6 @@ body {
 .main__desc {
   background-image: url(./imagen/Se-Pico.jpg);
   border-radius: 10px;
-  -webkit-box-shadow: 20px 20px 20px 20px black, 20px 0px 20px 20px blanchedalmond;
-          box-shadow: 20px 20px 20px 20px black, 20px 0px 20px 20px blanchedalmond;
   background-position: center center;
   background-size: cover;
   height: 90vh;
@@ -408,11 +410,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: blanchedalmond;
-  font-family: 'Open Sans', sans-serif;
+  color: #e9cda4;
   text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .main__desc--contimg {
@@ -466,7 +470,7 @@ body {
 }
 
 .footer__nav--anc:hover {
-  color: black;
+  color: red;
   font-size: 35px;
 }
 
@@ -518,6 +522,7 @@ body {
   width: 100%;
   font-size: 30px;
   color: #ce2828;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1180px) {
@@ -530,10 +535,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .main__desc--p {
-    color: white;
-    font-size: 30px;
-    letter-spacing: 0px;
+    font-size: 25px;
+    letter-spacing: px;
     height: 35%;
+    font-weight: bold;
   }
   .imagen__cuadro {
     background-image: none;
@@ -550,12 +555,29 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .main__desc {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-image: none;
+    background-position: none;
+    background-size: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    overflow: none;
+    height: 100%;
+    color: #e9cda4;
+    text-shadow: 5px 5px 6px red, 5px 5px 10px wheat, 5px 0px 0px #a74646;
+  }
   .main__desc--p {
     font-size: 33px;
     letter-spacing: 3px;
   }
   .titulo__texto {
     font-size: 20px;
+  }
+  .info__nav--btn {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,12 @@
 @mixin tablet{
     @media  screen and (max-widht: 768px){
         @content;
-        
+        font-size: 1rem;
     }
 }
 @mixin tablet{
     @media  screen and (max-widht: 425px){
         @content;
-        
+        font-size: 2rem;
     }
 }

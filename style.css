@@ -578,6 +578,10 @@ nav {
   }
   .info__nav--btn {
     font-size: 10px;
+    margin-left: 0px;
+  }
+  .info__nav--btn:hover {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
